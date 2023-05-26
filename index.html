@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       // var options=["True","False"];
+    // var newelem1=["t","F"];
+        function loadvalue()
+    {
+       var select =document.getElementById("select");
+    document.getElementById('msg').innerHTML=("result is:"+formid.select[formid.select.selectedIndex].text)
+        
+    }
+    let consant =["True","False"];
+    let argument =["myArg"];
+    let and=["java","hmtl"];
+    let or=["hello","hi"];
+
+    let arg1=document.getElementById("arg1");
+    let arg2 =document.getElementsById("arg2");
+
+ function Include(){
+   for(ele of consant){
+    document.getElementById("choose").innerHTML="";
+       var texts = document.getElementById("arg1").innerHTML;
+       var option = document.createElement('option');
+       option.text=ele;
+      option.value=ele;
+      //texts.push(option,texts[0]);
+       document.getElementById("choose").appendChild(option)=texts;
+    }
+ }
+    function Add(){
+    
+    var textarea=document.createElement("textarea");
+    
+    
+
+ }
+
+    </script>
+ </head>
+ 
+    <body>
+        
+        <div class="row">
+            <div class="col-3">
+                <fieldset>
+                    <legend>Add</legend>
+                    <div class="input-group">
+                        <input type="" id="arg"placeholder="MyArg"><select>
+                        <option>
+                            false
+                        </option>
+                        <option>true</option>
+                       </select>
+                
+                       <div>
+                        <button onclick="Add()" id="addarg" class="btn btn-primary">+Add Arg</button>
+                       </div>
+                       <br>
+                       <br>
+                       <br>
+                       <form name="formid">
+                          <select name="select" id="arg1" onchange="loadvalue()" >
+                            <option id="">
+                                Select..
+                            </option>
+                         <option value="consant" id="choose"onchange="Include()">consant</option>
+                            
+                            
+                            <option value="argument">argument</option>
+                            <option value="and">and</option>
+                            <option value="or">or</option>
+                            
+
+                           </select><button onclick="Del()">X</button>
+                           
+                        </form>
+                    </div>
+                    <div id="msg">
+                        <p>result:</p>
+                    </div>
+                </fieldset>
+            </div>
+            
+            
+            
+            </body>
+ </html>
